@@ -1,7 +1,7 @@
 package algorithms.searches;
 
-import algorithms.searches.interfaces.SearchAlgorithm;
+public interface LinearSearch {
 
-public class LinearSearch {
+    public void linearSearch();
 
 }
