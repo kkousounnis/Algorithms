@@ -17,7 +17,9 @@ public class LinearSearchImpl implements LinearSearch {
          */
         //printArray(integers);
         int shouldBeFound = randomNumber(integers);
+        
         SearchAlgorithmImpl search = new SearchAlgorithmImpl();
+        
         int atIndex = search.find(integers, shouldBeFound);
         System.out.println(
                 String.format(
