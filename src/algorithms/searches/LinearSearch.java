@@ -1,13 +1,7 @@
 package algorithms.searches;
 
-import java.util.ArrayList;
-import java.util.List;
+import algorithms.searches.interfaces.SearchAlgorithm;
 
 public class LinearSearch {
-    public static List<ArrayList> linearSearch(List<ArrayList> lists){
-        
-        
-        return null;
-    }
 
 }
