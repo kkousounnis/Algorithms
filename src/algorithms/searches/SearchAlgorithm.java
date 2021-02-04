@@ -1,4 +1,4 @@
-package algorithms.searches.interfaces;
+package algorithms.searches;
 
 public interface SearchAlgorithm {
 
@@ -9,5 +9,5 @@ public interface SearchAlgorithm {
      * @return first found index of the element
      */
     <T extends Comparable<T>> int find(T array[], T key);
-
+    
 }
