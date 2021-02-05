@@ -1,6 +1,6 @@
 package main;
 
-import algorithms.searches.LinearSearchImpl;
+import randomdata.RandomArrayImpl;
 
 public class Main {
 
@@ -8,9 +8,11 @@ public class Main {
         /**
          * LinearSearch Example          
          */
-        LinearSearchImpl lSearchEx = new LinearSearchImpl();
+        RandomArrayImpl lSearchEx = new RandomArrayImpl();
         System.out.println("Linear Search:");
-        lSearchEx.linearSearch();
+        lSearchEx.executeLinearSearch();
     }
+    
+    
 
 }

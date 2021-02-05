@@ -1,7 +1,7 @@
 package algorithms.searches;
 
-public interface LinearSearch {
+public interface LinearSearch{    
 
-    public void linearSearch();
+    public <T extends Comparable<T>> int linearSearch(T[] array, T value);    
 
 }
