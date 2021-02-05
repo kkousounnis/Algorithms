@@ -13,6 +13,4 @@ public class Main {
         lSearchEx.executeLinearSearch();
     }
     
-    
-
 }
