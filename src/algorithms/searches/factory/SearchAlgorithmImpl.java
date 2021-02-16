@@ -29,9 +29,17 @@ public class SearchAlgorithmImpl implements SearchAlgorithm {
             case BINARYSEARCH:
                 return binarySearchImpl.binarySearch(array, value, 0, array.length);
             case INTERPOLATIONSEARCH:
-                return interPolationSearchImpl.interPolationSearchImpl(array, value);
+                return interPolationSearchImpl.interPolationSearch( convertToInt(array), Integer.parseInt((String)value));
         }
         return -1;
+    }
+    
+    private <T extends Comparable<T>> int[] convertToInt(T[] array){
+        int[] arr = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            arr[i] = Integer.parseInt((String)array[i]);
+        }
+        return (arr);
     }
 
 }
