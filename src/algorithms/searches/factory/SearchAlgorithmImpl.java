@@ -1,6 +1,7 @@
 package algorithms.searches.factory;
 
 import algorithms.searches.BinarySearchImpl;
+import algorithms.searches.InterpolationSearchImpl;
 import algorithms.searches.LinearSearchImpl;
 import models.enums.SearchAlgorithmType;
 
@@ -9,6 +10,7 @@ public class SearchAlgorithmImpl implements SearchAlgorithm {
     private SearchAlgorithmType searchAlgorithmType;
     private LinearSearchImpl linearSearchImpl;
     private BinarySearchImpl binarySearchImpl;
+    private InterpolationSearchImpl interPolationSearchImpl;
 
     public SearchAlgorithmImpl() {
     }
@@ -26,6 +28,8 @@ public class SearchAlgorithmImpl implements SearchAlgorithm {
                 return linearSearchImpl.linearSearch(array, value);
             case BINARYSEARCH:
                 return binarySearchImpl.binarySearch(array, value, 0, array.length);
+            case INTERPOLATIONSEARCH:
+                return interPolationSearchImpl.interPolationSearchImpl(array, value);
         }
         return -1;
     }
