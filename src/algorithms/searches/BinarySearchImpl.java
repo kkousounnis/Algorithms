@@ -11,20 +11,20 @@ package algorithms.searches;
 public class BinarySearchImpl implements BinarySearch{
 
     @Override
-    public <T extends Comparable<T>> int binarySearch(T[] array, T key, int left, int right) {
+    public <T extends Comparable<T>> int binarySearch(T[] array, T value, int left, int right) {
         if (right < left) return -1; //the key can't be found 
         
         //find median
         int median = (left + right) >>> 1;
         
-        int comp = key.compareTo(array[median]);
+        int comp = value.compareTo(array[median]);
         
         if (comp == 0){
             return median;
         }else if (comp < 0){
-            return binarySearch(array, key, left, median - 1);
+            return binarySearch(array, value, left, median - 1);
         }else{
-            return binarySearch(array, key, median+1, right);
+            return binarySearch(array, value, median+1, right);
         }
     }
     
