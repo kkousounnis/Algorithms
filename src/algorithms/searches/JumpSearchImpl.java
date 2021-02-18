@@ -22,10 +22,7 @@ public class JumpSearchImpl implements JumpSearch {
             if (array[i] == value) {
                 return (i);
             }
-
         }
-
         return (-1);
     }
-
 }
