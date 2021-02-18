@@ -2,6 +2,7 @@ package algorithms.searches.factory;
 
 import algorithms.searches.BinarySearchImpl;
 import algorithms.searches.InterpolationSearchImpl;
+import algorithms.searches.JumpSearchImpl;
 import algorithms.searches.LinearSearchImpl;
 import models.enums.SearchAlgorithmType;
 
@@ -11,6 +12,7 @@ public class SearchAlgorithmImpl implements SearchAlgorithm {
     private LinearSearchImpl linearSearchImpl;
     private BinarySearchImpl binarySearchImpl;
     private InterpolationSearchImpl interPolationSearchImpl;
+    private JumpSearchImpl jumpSearchImpl;
 
     public SearchAlgorithmImpl() {
     }
@@ -25,19 +27,21 @@ public class SearchAlgorithmImpl implements SearchAlgorithm {
 
         switch (this.searchAlgorithmType) {
             case LINEARSEARCH:
-                return linearSearchImpl.linearSearch(array, value);
+                return (linearSearchImpl.linearSearch(array, value));
             case BINARYSEARCH:
-                return binarySearchImpl.binarySearch(array, value, 0, array.length);
+                return (binarySearchImpl.binarySearch(array, value, 0, array.length));
             case INTERPOLATIONSEARCH:
-                return interPolationSearchImpl.interPolationSearch( convertToInt(array), Integer.parseInt((String)value));
+                return (interPolationSearchImpl.interPolationSearch(convertToInt(array), Integer.parseInt((String) value)));
+            case JUMPSEARCH:
+                return (jumpSearchImpl.jumpSearch(array, value));
         }
         return -1;
     }
-    
-    private <T extends Comparable<T>> int[] convertToInt(T[] array){
+
+    private <T extends Comparable<T>> int[] convertToInt(T[] array) {
         int[] arr = new int[array.length];
         for (int i = 0; i < array.length; i++) {
-            arr[i] = Integer.parseInt((String)array[i]);
+            arr[i] = Integer.parseInt((String) array[i]);
         }
         return (arr);
     }
