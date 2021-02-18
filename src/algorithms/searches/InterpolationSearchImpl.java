@@ -2,8 +2,9 @@ package algorithms.searches;
 
 /**
  *
- * Worst-case performance O(n) Best-case performance O(1) Average perfomance
- * O(log(log(n)))
+ * Worst-case performance O(n) 
+ * Average perfomance O(log(log(n)))
+ * Best-case performance O(1)  * 
  */
 public class InterpolationSearchImpl implements InterpolationSearch {
 
