@@ -4,6 +4,6 @@ import models.enums.SearchAlgorithmType;
 
 public interface RandomArray {
 
-    public void executeLinearSearch(SearchAlgorithmType searchAlgorithmType);
+    public void executeSearch(SearchAlgorithmType searchAlgorithmType);
 
 }
