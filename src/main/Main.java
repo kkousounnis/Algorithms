@@ -1,6 +1,7 @@
 package main;
 
-import randomdata.RandomLinearArrayImpl;
+import models.enums.SearchAlgorithmType;
+import randomdata.RandomArrayImpl;
 
 public class Main {
 
@@ -8,9 +9,9 @@ public class Main {
         /**
          * LinearSearch Example          
          */
-        RandomLinearArrayImpl searchExecution = new RandomLinearArrayImpl();
+        RandomArrayImpl searchExecution = new RandomArrayImpl();
         System.out.println("Linear Search:");
-        searchExecution.executeLinearSearch();
+        searchExecution.executeLinearSearch(SearchAlgorithmType.LINEARSEARCH);
         
         System.out.println("Jump Search:");
         
