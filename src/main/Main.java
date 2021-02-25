@@ -11,9 +11,10 @@ public class Main {
          */
         RandomArrayImpl searchExecution = new RandomArrayImpl();
         System.out.println("Linear Search:");
-        searchExecution.executeLinearSearch(SearchAlgorithmType.LINEARSEARCH);
+        searchExecution.executeSearch(SearchAlgorithmType.LINEARSEARCH);
         
         System.out.println("Jump Search:");
+        searchExecution.executeSearch(SearchAlgorithmType.JUMPSEARCH);
         
         
         
