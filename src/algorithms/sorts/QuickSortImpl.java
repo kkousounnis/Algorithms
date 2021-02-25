@@ -1,12 +1,17 @@
 package algorithms.sorts;
 
-public class QuickSortImpl {
-    private int partition(int arr[], int low, int high){
-        
+public class QuickSortImpl implements QuickSort {
+
+    public <T extends Comparable<T>> T[] partition(T arr[], int low, int high) {
+
+        return null;
     }
 
-    public void quickSort(int arr[], int low, int high) {
-        
+    public <T extends Comparable<T>> T[] quickSort(T arr[], int low, int high) {
+        /**
+         * To Do Implement QuickSort
+         */
+        return null;
     }
 
 }
