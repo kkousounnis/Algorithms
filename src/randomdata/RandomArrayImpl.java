@@ -11,7 +11,7 @@ public class RandomArrayImpl {
     int size = 500;
     int maxElement = 250;
 
-    public void executeLinearSearch(SearchAlgorithmType searchAlgorithmType) {
+    public void executeSearch(SearchAlgorithmType searchAlgorithmType) {
         Integer[] integers = fakeData();
         /**
          * Print Array uncomment
