@@ -16,7 +16,8 @@ public class Main {
         System.out.println("Jump Search:");
         searchExecution.executeSearch(SearchAlgorithmType.JUMPSEARCH);
         
-        
+        System.out.println("Binary Search:");
+        searchExecution.executeSearch(SearchAlgorithmType.BINARYSEARCH);
         
     }
     
