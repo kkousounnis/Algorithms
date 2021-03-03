@@ -19,6 +19,9 @@ public class Main {
         System.out.println("Binary Search:");
         searchExecution.executeSearch(SearchAlgorithmType.BINARYSEARCH);
         
+        System.out.println("Interpolation Search:");
+        searchExecution.executeSearch(SearchAlgorithmType.INTERPOLATIONSEARCH);
+        
     }
     
 }
