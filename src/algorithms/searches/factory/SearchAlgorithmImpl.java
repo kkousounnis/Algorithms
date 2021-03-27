@@ -4,7 +4,6 @@ import algorithms.searches.BinarySearchImpl;
 import algorithms.searches.InterpolationSearchImpl;
 import algorithms.searches.JumpSearchImpl;
 import algorithms.searches.LinearSearchImpl;
-import java.util.Arrays;
 import models.enums.SearchAlgorithmType;
 
 public class SearchAlgorithmImpl implements SearchAlgorithm {
@@ -22,6 +21,8 @@ public class SearchAlgorithmImpl implements SearchAlgorithm {
         this.searchAlgorithmType = searchAlgorithmType;
         this.linearSearchImpl = new LinearSearchImpl();
         this.jumpSearchImpl = new JumpSearchImpl();
+        this.interPolationSearchImpl = new InterpolationSearchImpl();
+        this.binarySearchImpl = new BinarySearchImpl();
     }
 
     @Override

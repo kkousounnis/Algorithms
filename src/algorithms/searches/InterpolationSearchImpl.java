@@ -1,5 +1,7 @@
 package algorithms.searches;
 
+import java.util.Arrays;
+
 /**
  *
  * Worst-case performance O(n) 
@@ -10,6 +12,7 @@ public class InterpolationSearchImpl implements InterpolationSearch {
 
     @Override
     public int interPolationSearch(int array[], int value) {
+        Arrays.sort(array);
         int startIndex = 0;
         int endIndex = (array.length - 1);
 

@@ -1,5 +1,7 @@
 package algorithms.searches;
 
+import java.util.Arrays;
+
 /**
  * 
  * Binary Search 
@@ -12,6 +14,7 @@ public class BinarySearchImpl implements BinarySearch{
 
     @Override
     public <T extends Comparable<T>> int binarySearch(T[] array, T value, int left, int right) {
+        Arrays.sort(array);
         if (right < left) return -1; //the key can't be found 
         
         //find median
