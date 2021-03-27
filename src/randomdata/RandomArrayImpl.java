@@ -21,12 +21,15 @@ public class RandomArrayImpl {
 
         SearchAlgorithmImpl search
                 = new SearchAlgorithmImpl(searchAlgorithmType);
-
+        
         int atIndex = search.find(integers, shouldBeFound);
-        System.out.println(
-                String.format(
-                        "\nShould be found: %d. Found %d at index %d. An array length %d",
-                        shouldBeFound, integers[atIndex], atIndex, size));
+        if(atIndex>0)        
+            System.out.println(
+                    String.format(
+                            "\nShould be found: %d. Found %d at index %d. An array length %d",
+                                shouldBeFound, integers[atIndex], atIndex, size));
+        else
+            System.out.println("\nNothing found!!!");
 
     }
 

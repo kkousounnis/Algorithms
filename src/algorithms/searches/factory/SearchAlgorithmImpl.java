@@ -34,7 +34,7 @@ public class SearchAlgorithmImpl implements SearchAlgorithm {
                 return (binarySearchImpl.binarySearch(array, value, 0, array.length));
             case INTERPOLATIONSEARCH:
                 return (interPolationSearchImpl.interPolationSearch(convertToInt(array), Integer.parseInt((String) value)));
-            case JUMPSEARCH:                
+            case JUMPSEARCH:            
                 return (jumpSearchImpl.jumpSearch(array, value));
         }
         return -1;
